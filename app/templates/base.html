@@ -2,9 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>
+        {% block title %} {% endblock %} | Base Viewer
+    </title>
 </head>
 <body>
+
+    <div class="container">
+        <div class="row">
+            <h1>
+                {% block content_title %}
+
+                {% endblock %}
+            </h1>
+        </div>
+            {% block content %}
+
+            {% endblock %}
+
+    </div>
 
 </body>
 </html>
