@@ -14,6 +14,10 @@ class Configuration(object):
     FTP_HOST = "connect.as-electrica.ru"
     FTP_PORT = 89
     FTP_PASSWORD = "Kl@yped@"
+    UPLOAD_FOLDER_NAME = 'static'
+    ALLOWED_EXTENSIONS = {"xml"}
+    XML_DATA_FILE_NAME = "export.xml"
+    XML_DATA_FILE_PATH = os.path.join(basedir,UPLOAD_FOLDER_NAME,XML_DATA_FILE_NAME)
 
 
 
